@@ -33,7 +33,7 @@ Two subsets are distributed in this repository:
 
 | Subset name | Description | Problems | Results |
 |-------------|-------------|----------|---------|
-| - | All problems. | 138 / 138 | [Report]([results/maros_meszaros_ref.md](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_ref.md)) |
+| - | All problems. | 138 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_ref.md) |
 | Dense | Only problems with less than $n \leq 1000$ variables and $m \leq 10000$ constraints. | 62 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_ref.md) |
 | Dense pos. def. | Only problems from the Dense subset where the cost matrix is positive-definite. | 19 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_posdef_ref.md) |
 
