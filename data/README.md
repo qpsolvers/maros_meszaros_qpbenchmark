@@ -1,6 +1,6 @@
 # Maros Meszaros problem files
 
-These files originate from [proxqp\_benchmark](https://github.com/Simple-Robotics/proxqp_benchmark/blob/86780921f82d5c7c04a8bddb66b03c85a1a1fbb8/problem_classes/maros_meszaros_data). They were converted to the MAT format from the Maros and Meszaros SIF problem files. See the original repository for conversion details.
+These files originate from [osqp\_benchmarks](https://github.com/osqp/osqp_benchmarks/tree/5c79e870c4bd697383f66f5dff26aea29dc1ebfa/problem_classes/maros_meszaros_data). They were converted to the MAT format from the Maros and Meszaros SIF problem files. See the original repository for conversion details.
 
 All problems have the form:
 
