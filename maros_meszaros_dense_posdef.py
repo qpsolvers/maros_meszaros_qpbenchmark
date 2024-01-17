@@ -7,12 +7,14 @@
 
 """Dense subset with positive definite P of the Maros-Meszaros test set."""
 
+import os
 from typing import Iterator
 
-from maros_meszaros_dense import MarosMeszarosDense
-
-from qpbenchmark.problem import Problem
+import qpbenchmark
+from qpbenchmark.benchmark import main
 from qpbenchmark.utils import is_posdef
+
+from maros_meszaros_dense import MarosMeszarosDense
 
 
 class MarosMeszarosDensePosdef(MarosMeszarosDense):
@@ -37,8 +39,12 @@ class MarosMeszarosDensePosdef(MarosMeszarosDense):
         """Test set is dense."""
         return False
 
-    def __iter__(self) -> Iterator[Problem]:
+    def __iter__(self) -> Iterator[qpbenchmark.Problem]:
         """Iterate on test set problems."""
         for problem in super().__iter__():
             if is_posdef(problem.P):
                 yield problem
+
+
+if __name__ == "__main__":
+    main(test_set_path=os.path.abspath(__file__))

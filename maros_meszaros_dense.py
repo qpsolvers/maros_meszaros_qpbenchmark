@@ -7,10 +7,13 @@
 
 """Dense subset of the Maros-Meszaros test set."""
 
+import os
 from typing import Iterator
 
+import qpbenchmark
+from qpbenchmark.benchmark import main
+
 from maros_meszaros import MarosMeszaros
-from qpbenchmark.problem import Problem
 
 
 class MarosMeszarosDense(MarosMeszaros):
@@ -35,7 +38,7 @@ class MarosMeszarosDense(MarosMeszaros):
         return False
 
     @staticmethod
-    def count_constraints(problem: Problem):
+    def count_constraints(problem: qpbenchmark.Problem):
         """Count inequality and equality constraints.
 
         Notes:
@@ -51,10 +54,14 @@ class MarosMeszarosDense(MarosMeszaros):
             m += problem.lb.shape[0]
         return m
 
-    def __iter__(self) -> Iterator[Problem]:
+    def __iter__(self) -> Iterator[qpbenchmark.Problem]:
         """Iterate on test set problems."""
         for problem in super().__iter__():
             nb_variables = problem.P.shape[0]
             nb_constraints = self.count_constraints(problem)
             if nb_variables <= 1000 and nb_constraints <= 1000:
                 yield problem.to_dense()
+
+
+if __name__ == "__main__":
+    main(test_set_path=os.path.abspath(__file__))

@@ -7,14 +7,14 @@
 
 """Maros-Meszaros test set."""
 
-import os.path
+import os
 from typing import Iterator, Union
 
 import numpy as np
+import qpbenchmark
 import scipy.io as spio
 import scipy.sparse as spa
-
-import qpbenchmark
+from qpbenchmark.benchmark import main
 
 
 class MarosMeszaros(qpbenchmark.TestSet):
@@ -225,3 +225,7 @@ class MarosMeszaros(qpbenchmark.TestSet):
                 mat_path = os.path.join(self.data_dir, fname)
                 problem = self.load_problem_from_mat_file(mat_path)
                 yield problem
+
+
+if __name__ == "__main__":
+    main(test_set_path=os.path.abspath(__file__))
