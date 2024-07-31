@@ -33,22 +33,21 @@ Two subsets are distributed in this repository:
 
 | Subset name | Description | Problems | Results |
 |-------------|-------------|----------|---------|
-| - | All problems. | 138 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_ref.md) |
-| Dense | Only problems with less than $n \leq 1000$ variables and $m \leq 10000$ constraints. | 62 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_ref.md) |
-| Dense pos. def. | Only problems from the Dense subset where the cost matrix is positive-definite. | 19 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_posdef_ref.md) |
+| - | All problems. | 138 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros.md) |
+| Dense | Only problems with less than $n \leq 1000$ variables and $m \leq 10000$ constraints. | 62 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md) |
+| Dense pos. def. | Only problems from the Dense subset where the cost matrix is positive-definite. | 19 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_posdef.md) |
 
 ## Citation
 
-If you use `qpbenchmark` in your scientific works, please cite it *e.g.* as follows:
+If you use `qpbenchmark` in your works, please cite all its contributors as follows:
 
 ```bibtex
 @software{qpbenchmark2024,
-  author = {Caron, Stéphane and Zaki, Akram and Otta, Pavel and Arnström, Daniel and Carpentier, Justin},
-  license = {Apache-2.0},
-  month = jan,
   title = {{qpbenchmark: Benchmark for quadratic programming solvers available in Python}},
+  author = {Caron, Stéphane and Zaki, Akram and Otta, Pavel and Arnström, Daniel and Carpentier, Justin and Yang, Fengyu and Leziart, Pierre-Alexandre},
   url = {https://github.com/qpsolvers/qpbenchmark},
-  version = {2.2.0},
+  license = {Apache-2.0},
+  version = {2.2.2},
   year = {2024}
 }
 ```
