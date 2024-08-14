@@ -55,6 +55,8 @@ class MarosMeszaros(qpbenchmark.TestSet):
         self.known_solver_issues.add(("QGFRDXPN", "proxqp"))
         # https://github.com/ERGO-Code/HiGHS/issues/995
         self.known_solver_issues.add(("STADAT1", "highs"))
+        # https://github.com/ERGO-Code/HiGHS/issues/1874
+        self.known_solver_issues.add(("LASER", "highs"))
 
     def __add_known_solver_timeouts(self):
         minutes = 60.0  # [s]
