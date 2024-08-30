@@ -57,7 +57,10 @@ class MarosMeszaros(qpbenchmark.TestSet):
         self.known_solver_issues.add(("STADAT1", "highs"))
         # https://github.com/ERGO-Code/HiGHS/issues/995
         self.known_solver_issues.add(("LASER", "highs"))
+        # segmentation fault as in the above issue
         self.known_solver_issues.add(("CONT-200", "highs"))
+        # segmentation fault as in the above issue
+        self.known_solver_issues.add(("CONT-201", "highs"))
 
     def __add_known_solver_timeouts(self):
         minutes = 60.0  # [s]
