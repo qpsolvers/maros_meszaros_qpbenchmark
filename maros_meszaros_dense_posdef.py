@@ -10,11 +10,11 @@
 import os
 from typing import Iterator
 
+from maros_meszaros_dense import MarosMeszarosDense
+
 import qpbenchmark
 from qpbenchmark.benchmark import main
 from qpbenchmark.utils import is_posdef
-
-from maros_meszaros_dense import MarosMeszarosDense
 
 
 class MarosMeszarosDensePosdef(MarosMeszarosDense):
@@ -47,4 +47,9 @@ class MarosMeszarosDensePosdef(MarosMeszarosDense):
 
 
 if __name__ == "__main__":
-    main(test_set_path=os.path.abspath(__file__))
+    test_set_path = os.path.abspath(__file__)
+    test_set_dir = os.path.dirname(test_set_path)
+    main(
+        test_set_path=test_set_path,
+        results_path=f"{test_set_dir}/results/maros_meszaros.csv",
+    )
