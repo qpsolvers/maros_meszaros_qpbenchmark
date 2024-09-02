@@ -61,6 +61,8 @@ class MarosMeszaros(qpbenchmark.TestSet):
         self.known_solver_issues.add(("CONT-200", "highs"))
         # segmentation fault as in the above issue
         self.known_solver_issues.add(("CONT-201", "highs"))
+        # segmentation fault as in the above issue
+        self.known_solver_issues.add(("CONT-300", "highs"))
 
     def __add_known_solver_timeouts(self):
         minutes = 60.0  # [s]
