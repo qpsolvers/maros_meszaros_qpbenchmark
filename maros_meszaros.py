@@ -128,6 +128,23 @@ class MarosMeszaros(qpbenchmark.TestSet):
             }
         )
 
+    @staticmethod
+    def count_constraints(problem: qpbenchmark.Problem):
+        """Count inequality and equality constraints.
+
+        Notes:
+            We only count box inequality constraints once, and only from lower
+            bounds. That latter part is specific to this test set.
+        """
+        m = 0
+        if problem.G is not None:
+            m += problem.G.shape[0]
+        if problem.A is not None:
+            m += problem.A.shape[0]
+        if problem.lb is not None:
+            m += problem.lb.shape[0]
+        return m
+
     def load_problem_from_mat_file(self, path):
         """Load problem from MAT file.
 
