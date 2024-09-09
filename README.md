@@ -2,9 +2,9 @@
 
 This repository contains the [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.html) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). Maros-Meszaros is a standard test set containing 138 quadratic programs that are designed to be difficult. Here is the report produced by `qpbenchmark`:
 
-- 📈 <a href="https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros.md"><strong>Maros-Meszaros test set results</strong></a> (138 problems)
-- 📈 [Dense subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md) (62 problems)
-- 📈 [Sparse subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_sparse.md) (76 problems)
+- 📈 <a href="https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros.md"><strong>Maros-Meszaros test set results</strong></a>
+- 📈 [Dense subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md)
+- 📈 [Sparse subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_sparse.md)
 
 ## Installation
 
@@ -29,14 +29,12 @@ The outcome is a standardized report comparing all available solvers against the
 
 ## Subsets
 
-Two subsets are distributed in this repository:
-
-| Subset name | Description | Problems | Results |
-|-------------|-------------|----------|---------|
+| Subset name | Description | Problems |
+|-------------|-------------|----------|
 | - | All problems. | 138 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros.md) |
-| Dense | Only problems with less than $n \leq 1000$ variables and $m \leq 10000$ constraints. | 62 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md) |
-| Dense pos. def. | Only problems from the Dense subset where the cost matrix is positive-definite. | 19 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_posdef.md) |
-| Sparse | Complementary to the dense subset | 76 / 138 | [Report](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_sparse.md) |
+| [Dense](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md) | Only problems with less than $n \leq 1000$ variables and $m \leq 10000$ constraints. | 62 / 138 |
+| [Dense pos. def.](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense_posdef.md) | Only problems from the Dense subset where the cost matrix is positive-definite. | 19 / 138 |
+| [Sparse](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_sparse.md) | Complementary to the dense subset | 76 / 138 |
 
 ## Citation
 
