@@ -1,6 +1,6 @@
 # Maros-Meszaros test set for QP solvers
 
-This repository contains the [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.html) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). Maros-Meszaros is a standard test set containing 138 quadratic programs that are designed to be difficult. Here is the report produced by `qpbenchmark`:
+This repository contains the [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.html) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). Maros-Meszaros is a standard test set containing 138 quadratic programs that are designed to be difficult. Here are the reports produced by `qpbenchmark`:
 
 - 📈 <a href="https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros.md"><strong>Maros-Meszaros test set results</strong></a>
 - 📈 [Dense subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md)
