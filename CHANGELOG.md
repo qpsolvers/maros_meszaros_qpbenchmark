@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Update to qpbenchmark 2.4.0
+
 ## [2024-09-09]
 
 ### Added
