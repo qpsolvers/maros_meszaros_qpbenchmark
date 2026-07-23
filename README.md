@@ -6,13 +6,14 @@ This repository contains the [Maros-Meszaros test set](https://www.cuter.rl.ac.u
 - 📈 [Dense subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_dense.md)
 - 📈 [Sparse subset results](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/blob/main/results/maros_meszaros_sparse.md)
 
+The methodology and limitations of the benchmark are described in the [qpbenchmark readme](https://github.com/qpsolvers/qpbenchmark/).
+
 ## Installation
 
-The recommended process is to install the benchmark and all solvers in an isolated environment using ``conda``:
+The recommended process is to install the benchmark and all solvers using [pixi](https://pixi.prefix.dev/):
 
 ```console
-conda env create -f environment.yaml
-conda activate qpbenchmark
+pixi install
 ```
 
 It is also possible to install the benchmark [from PyPI](https://github.com/qpsolvers/qpbenchmark#installation).
@@ -21,8 +22,12 @@ It is also possible to install the benchmark [from PyPI](https://github.com/qpso
 
 Run the test set as follows:
 
-```
-qpbenchmark ./maros_meszaros.py run
+Run the test set as follows:
+
+```console
+pixi run maros_meszaros         # full test set
+pixi run maros_meszaros_dense   # dense subset
+pixi run maros_meszaros_sparse  # sparse subset
 ```
 
 The outcome is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/discussions/categories/results).
@@ -38,20 +43,7 @@ The outcome is a standardized report comparing all available solvers against the
 
 ## Citation
 
-If you use `qpbenchmark` in your works, please cite all its contributors as follows:
-
-```bibtex
-@software{qpbenchmark,
-  title = {{qpbenchmark: Benchmark for quadratic programming solvers available in Python}},
-  author = {Caron, Stéphane and Zaki, Akram and Otta, Pavel and Arnström, Daniel and Carpentier, Justin and Yang, Fengyu and Leziart, Pierre-Alexandre},
-  url = {https://github.com/qpsolvers/qpbenchmark},
-  license = {Apache-2.0},
-  version = {2.5.0},
-  year = {2025}
-}
-```
-
-Don't forget to add yourself to the BibTeX above and to `CITATION.cff` if you contribute to this repository.
+This test set is run using `qpbenchmark`. If you use it in your work, you can refer to it using [this citation](https://github.com/qpsolvers/qpbenchmark#citation).
 
 ## See also
 

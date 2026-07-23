@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Switch to pixi for running the test set
+
 ### Changed
 
 - Rename results file with `.parquet` extension
