@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Rename results file with `.parquet` extension
+- Transfer copyright notices to `NOTICE` file
 - Update to qpbenchmark 2.7.1
 
 ## [2024-09-09]
