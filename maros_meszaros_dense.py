@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
 
 """Dense subset of the Maros-Meszaros test set."""
@@ -8,10 +5,10 @@
 import os
 from typing import Iterator
 
+from maros_meszaros import MarosMeszaros
+
 import qpbenchmark
 from qpbenchmark.benchmark import main
-
-from maros_meszaros import MarosMeszaros
 
 
 class MarosMeszarosDense(MarosMeszaros):

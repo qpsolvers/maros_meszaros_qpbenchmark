@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
 
 """Maros-Meszaros test set."""
@@ -9,9 +6,10 @@ import os
 from typing import Iterator, Union
 
 import numpy as np
-import qpbenchmark
 import scipy.io as spio
 import scipy.sparse as spa
+
+import qpbenchmark
 from qpbenchmark.benchmark import main
 
 
